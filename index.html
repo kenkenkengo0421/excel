@@ -991,6 +991,313 @@ HSTACK(A2:C5,E3:G5）
 <br>
 
 
+<h4 id="substitute">指定した文字列を置換する</h4>
+<code>
+=SUBSTITUTE(文字列,検索文字列,置換文字列[,置換対象])
+</code>
+<pre>
+</pre>
+<br>
+<br>
+
+
+<h4 id="fixed">数値を四捨五入しカンマを使った文字列に変換する</h4>
+<code>
+=FIXED(数値[,桁数][,桁区切り])
+</code>
+<pre>
+計算例FIXED(123456.789,1,FALSE)
+
+桁区切り
+TRUE:カンマで区切らない
+FALSE:カンマで区切る
+</pre>
+<img src="img/fixed.png" alt="">
+<br>
+<br>
+
+
+<h4 id="yen">円に変換する</h4>
+<code>
+=YEN(数値[,桁数])
+</code>
+<pre>
+</pre>
+<br>
+<br>
+
+
+<h4 id="t">文字列を抽出する</h4>
+<code>
+=T(値)
+</code>
+<pre>
+</pre>
+<br>
+<br>
+
+
+<h4 id="asc">文字列を半角に変換する</h4>
+<code>
+=ASC(文字列)
+</code>
+<pre>
+</pre>
+<br>
+<br>
+
+
+<h4 id="jis">文字列を全角に変換する</h4>
+<code>
+=JIS(文字列)
+</code>
+<pre>
+</pre>
+<br>
+<br>
+
+
+<h4 id="value">文字列を数値に変換する</h4>
+<code>
+=VALUE(文字列)
+</code>
+<pre>
+</pre>
+<br>
+<br>
+
+
+<h4 id="valuetotext">値を文字列に変換する</h4>
+<code>
+=VALUETOTEXT(文字列)
+</code>
+<pre>
+</pre>
+<br>
+<br>
+
+
+<h4 id="arraytotext">配列を文字列に変換する</h4>
+<code>
+=ARRAYTOTEXT(配列[,書式])
+</code>
+<pre>
+書式
+0:値が , で区切られた1行の文字列
+1:配列定数の文字列 行の区切りには,　列の区切りには;  文字列には "" 配列定数全体は{} 
+</pre>
+<br>
+<br>
+
+
+<h4 id="upper">英字を大文字に変換する</h4>
+<code>
+=UPPER(文字列)
+</code>
+<pre>
+</pre>
+<br>
+<br>
+
+
+<h4 id="lower">英字を小文字に変換する</h4>
+<code>
+=LOWER(文字列)
+</code>
+<pre>
+</pre>
+<br>
+<br>
+
+
+<h4 id="trim">不要なスペースを削除する</h4>
+<code>
+=TRIM(文字列)
+</code>
+<pre>
+</pre>
+<br>
+<br>
+
+
+<h4 id="rept">文字列を繰り返して表示する</h4>
+<code>
+=REPT(文字列,繰り返し回数)
+</code>
+<pre>
+</pre>
+<br>
+<br>
+
+
+<h4 id="dec2bin">10進数を2進数に変換する</h4>
+<code>
+=DEC2BIN(数値[,桁数])
+</code>
+<pre>
+計算例DEC2BIN(100)
+10進数の100を2進数の1100100に変換する
+</pre>
+<br>
+<br>
+
+
+<h4 id="dec2hex">10進数を16進数に変換する</h4>
+<code>
+=DEC2HEX(数値[,桁数])
+</code>
+<pre>
+計算例DEC2HEX(100,4)
+10進数の100を16進数の0064に変換する
+</pre>
+<br>
+<br>
+
+
+<h4 id="dec2oct">10進数を8進数に変換する</h4>
+<code>
+=DEC2OCT(数値[,桁数])
+</code>
+<pre>
+計算例DEC2OCT(100,4)
+10進数の100を16進数の0144に変換する
+</pre>
+<br>
+<br>
+
+
+<h4 id="bin2dec">2進数を10進数に変換する</h4>
+<code>
+=BIN2DEC(数値)
+</code>
+<pre>
+計算例BIN2DEC(1010)
+2進数の1010を10進数の10に変換する
+</pre>
+<br>
+<br>
+
+
+<h4 id="bin2hex">2進数を16進数に変換する</h4>
+<code>
+=BIN2HEX(数値)
+</code>
+<pre>
+計算例BIN2HEX(1100100)
+2進数の1100100を16進数の64に変換する
+</pre>
+<br>
+<br>
+
+
+<h4 id="bin2oct">2進数を8進数に変換する</h4>
+<code>
+=BIN2OCT(数値)
+</code>
+<pre>
+計算例BIN2OCT(1100100)
+2進数の1100100を8進数の144に変換する
+</pre>
+<br>
+<br>
+
+
+<h4 id="hex2dec">16進数を10進数に変換する</h4>
+<code>
+=HEX2DEC(数値)
+</code>
+<pre>
+計算例HEX2DEC("64")
+16進数の64を10進数の100に変換する
+</pre>
+<br>
+<br>
+
+
+<h4 id="hex2bin">16進数を2進数に変換する</h4>
+<code>
+=HEX2BIN(数値)
+</code>
+<pre>
+計算例HEX2BIN("64")
+16進数の64を2進数の1100100に変換する
+</pre>
+<br>
+<br>
+
+
+<h4 id="hex2oct">16進数を8進数に変換する</h4>
+<code>
+=HEX2OCT(数値)
+</code>
+<pre>
+計算例HEX2OCT("64")
+16進数の64を8進数の144に変換する
+</pre>
+<br>
+<br>
+
+
+<h4 id="oct2bin">8進数を2進数に変換する</h4>
+<code>
+=OCT2BIN(数値)
+</code>
+<pre>
+計算例OCT2BIN(144)
+8進数の144を2進数の1100100に変換する
+</pre>
+<br>
+<br>
+
+
+<h4 id="oct2dec">8進数を10進数に変換する</h4>
+<code>
+=OCT2DEC(数値)
+</code>
+<pre>
+計算例OCT2DEC(162)
+8進数の162を10進数の114に変換する
+</pre>
+<br>
+<br>
+
+
+<h4 id="oct2hex">8進数を16進数に変換する</h4>
+<code>
+=OCT2HEX(数値)
+</code>
+<pre>
+計算例OCT2HEX(162)
+8進数の162を16進数の72に変換する
+</pre>
+<br>
+<br>
+
+
+<h4 id="delta">2つの数値が等しいかどうか調べる</h4>
+<code>
+=DELTA(数値1,数値2)
+</code>
+<pre>
+計算例DELTA(A1,B1)
+A1とA2が等しいかどうか調べる
+</pre>
+<br>
+<br>
+
+
+<h4 id="convert">数値の単位を変換する</h4>
+<code>
+=CONVERT(数値,変換前単位,変換後単位)
+</code>
+<pre>
+excel公式
+</pre>
+<a href="https://support.microsoft.com/ja-jp/office/convert-%E9%96%A2%E6%95%B0-d785bef1-808e-4aac-bdcd-666c810f9af2">microsoft公式ページへ</a>
+<br>
+<br>
+
+
 
 
 
@@ -1114,12 +1421,41 @@ HSTACK(A2:C5,E3:G5）
 <h4>文字列長</h4>
 
 <a href="#len">文字列の文字数を求める</a><br>
+<a href="#substitute">指定した文字列を置換する</a><br>
+
+<h4>文字列操作</h4>
+
+<a href="#fixed">数値を四捨五入しカンマを使った文字列に変換する</a><br>
+<a href="#yen">円に変換する</a><br>
+<a href="#t">文字列を抽出する</a><br>
+<a href="#asc">文字列を半角に変換する</a><br>
+<a href="#jis">文字列を全角に変換する</a><br>
+<a href="#value">文字列を数値に変換する</a><br>
+<a href="#valuetotext">値を文字列に変換する</a><br>
+<a href="#arraytotext">配列を文字列に変換する</a><br>
+<a href="#upper">英字を大文字に変換する</a><br>
+<a href="#lower">英字を小文字に変換する</a><br>
+<a href="#trim">不要なスペースを削除する</a><br>
+<a href="#rept">文字列を繰り返して表示する</a><br>
+
+<h4>エンジニアリング</h4>
+
+<a href="#dec2bin">10進数を2進数に変換する</a><br>
+<a href="#dec2hex">10進数を16進数に変換する</a><br>
+<a href="#dec2oct">10進数を8進数に変換する</a><br>
+<a href="#bin2dec">2進数を10進数に変換する</a><br>
+<a href="#bin2hex">2進数を16進数に変換する</a><br>
+<a href="#bin2oct">2進数を8進数に変換する</a><br>
+<a href="#hex2dec">16進数を10進数に変換する</a><br>
+<a href="#hex2bin">16進数を2進数に変換する</a><br>
+<a href="#hex2oct">16進数を8進数に変換する</a><br>
+<a href="#oct2bin">8進数を2進数に変換する</a><br>
+<a href="#oct2dec">8進数を10進数に変換する</a><br>
+<a href="#oct2hex">8進数を16進数に変換する</a><br>
+<a href="#delta">2つの数値が等しいかどうか調べる</a><br>
+<a href="#convert">数値の単位を変換する</a><br>
 
 <br><br><br><br><br><br>
-
-
-
-
 
 
 
