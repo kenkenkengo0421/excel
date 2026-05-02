@@ -61,3 +61,47 @@
   color:black;
   font-size:13px;
 }
+
+/*スマホ設定*/
+
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas:
+      "side1"
+      "side2"
+      "main";
+    justify-content: start;
+  }
+
+  .main {
+    min-width: 0;
+  }
+
+  .main pre,
+  .main code {
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+
+  .side1 {
+    position: static;
+    min-height: auto;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .side2 {
+    position: static;
+    max-height: 40vh;
+    border-left: none;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 15px;
+  }
+
+  .main img {
+    max-width: 100%;
+    height: auto;
+  }
+}
